@@ -1,12 +1,12 @@
 import React from 'react';
-import Background from '../elements/Background';
+import Image from '../elements/Image';
 import Countdown from '../component/Countdown';
 
 function Index() {
   return(
-    <section>
+    <section className="counter-background">
       Index page
-      <Background />
+      <Image />
       <Countdown />
     </section>
   );

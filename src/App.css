@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btc-image {
+  box-shadow: 2px 2px 2px black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .counter-background {
+    animation: background-color-animate 7s infinite;
+    background-color: rgb(255, 215, 0);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  @keyframes background-color-animate {
+    0% {background-color: rgb(255, 215, 0);}
+    10% {background-color: rgb(247, 205, 6)}
+    20% {background-color: rgb(240, 195, 12)}
+    30% {background-color: rgb(233, 185, 18)}
+    40% {background-color: rgb(236, 175, 24)}
+    50% {background-color: rgb(218, 165, 32)}
+    60% {background-color: rgb(236, 175, 24)}
+    70% {background-color: rgb(233, 185, 18)}
+    80% {background-color: rgb(240, 195, 12)}
+    90% {background-color: rgb(247, 205, 6)}
+    100% {background-color: rgb(255, 215, 0);}
+  }
+
+
+  .btc-image {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .btc-image {
+    min-width: 320px;
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  .btc-image {
+    min-width: 480px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .btc-image {
+    min-width: 700px;
+    opacity: 0.7;
+    width: auto;
   }
 }
