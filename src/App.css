@@ -1,7 +1,12 @@
 .btc-image {
   box-shadow: 2px 2px 2px black;
-  display: flex;
+  display: none;
   margin: auto;
+}
+
+.btc-background {
+  display: none;
+  margin:auto;
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px) {
@@ -30,12 +35,14 @@
 
 
   .btc-image {
+    display: flex;
     border-radius: 20px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .btc-image {
+    display: flex;
     min-width: 320px;
     width: 320px;
   }
@@ -43,15 +50,32 @@
 
 @media screen and (min-width: 481px) and (max-width: 700px) {
   .btc-image {
+    display: flex;
     min-width: 480px;
     width: 480px;
   }
 }
 
 @media screen and (min-width: 701px) {
-  .btc-image {
+  .btc-background {
+    animation: background-color-animate 20s infinite;
+    display: flex;
     min-width: 700px;
-    opacity: 0.7;
     width: auto;
+    height: 100vh;
+  }
+
+  @keyframes background-color-animate {
+    0% {filter: grayscale(0);}
+    10% {filter: grayscale(0.2);}
+    20% {filter: grayscale(0.4);}
+    30% {filter: grayscale(0.6);}
+    40% {filter: grayscale(0.8);}
+    50% {filter: grayscale(1);}
+    60% {filter: grayscale(0.8);}
+    70% {filter: grayscale(0.6);}
+    80% {filter: grayscale(0.4);}
+    90% {filter: grayscale(0.2);}
+    100% {filter: grayscale(0);}
   }
 }
