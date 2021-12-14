@@ -1,0 +1,49 @@
+.bitcoin-background {
+  /*
+    icons: https://icons8.com.br/icons/set/bitcoin--white
+    background image created in: https://patternico.com/
+  */
+  background-image: url('../images/tile_background.png');
+  margin: auto;
+  width: 100vw;
+}
+
+.counter-background {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  mix-blend-mode: hue;
+  width: 100vw;
+}
+
+
+@media screen and (min-width: 320px) {
+  .counter-background {
+    animation: background-color-animate 20s infinite;
+  }
+
+  @keyframes background-color-animate {
+    0% {background-color: rgba(255, 215, 0, 0.25)}
+    5% {background-color: rgba(204, 172, 51, 0.25)}
+    10% {background-color: rgba(153, 129, 102, 0.25)}
+    15% {background-color: rgba(102, 86, 153, 0.25)} 
+    20% {background-color: rgba(51, 43, 204, 0.25)} 
+    25% {background-color: rgba(0, 0, 255, 0.25)}
+    30% {background-color: rgba(0, 26, 204, 0.25)}
+    35% {background-color: rgba(0, 51, 153, 0.25)} 
+    40% {background-color: rgba(0, 77, 102, 0.25)}
+    45% {background-color: rgba(0, 203, 51, 0.25)} 
+    50% {background-color: rgba(0, 128, 0, 0.25)}
+    55% {background-color: rgba(51, 203, 0, 0.25)}
+    60% {background-color: rgba(102, 77, 0, 0.25)}
+    65% {background-color: rgba(153, 51, 0, 0.25)}
+    70% {background-color: rgba(204, 26, 0, 0.25)} 
+    75% {background-color: rgba(255, 0, 0, 0.25)}
+    80% {background-color: rgba(255, 43, 0, 0.25)}
+    85% {background-color: rgba(255, 86, 0, 0.25)}
+    90% {background-color: rgba(255, 129, 0, 0.25)}
+    95% {background-color: rgba(255, 172, 0, 0.25)}
+    100% {background-color: rgba(255, 215, 0, 0.25)}
+  }
+}

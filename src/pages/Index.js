@@ -1,14 +1,9 @@
 import React from 'react';
-import Image from '../elements/Image';
-import Countdown from '../component/Countdown';
+import CountdownBitcoin from './CountdownBitcoin';
 
 function Index() {
   return(
-    <section className="counter-background">
-      Index page
-      <Image />
-      <Countdown />
-    </section>
+    <CountdownBitcoin />
   );
 }
 

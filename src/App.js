@@ -1,11 +1,11 @@
-import './App.css';
 import Index from './pages/Index';
+import CountdownProvider from './context/CountdownProvider';
 
 function App() {
   return (
-   <section>
+   <CountdownProvider>
      <Index />
-   </section>
+   </CountdownProvider>
   );
 }
 

@@ -1,0 +1,26 @@
+.countdown-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div-timer-inputs {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  top: 25%;
+}
+
+.div-timer-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  top: 40%;
+}
+
+.countdown-timer {
+  font-size: 62px;
+  position: absolute;
+  top: 35%;
+}
