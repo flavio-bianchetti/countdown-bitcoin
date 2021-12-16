@@ -8,7 +8,7 @@ function Input({ className, type, name, value, onChange, label, size, min, max }
         className={ className }
         type={ type }
         name={ name }
-        value={ value }
+        value={ value[name] }
         onChange={ onChange }
         size={ size }
         min={ min }
