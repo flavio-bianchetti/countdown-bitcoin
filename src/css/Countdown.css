@@ -1,3 +1,7 @@
+span {
+  font-size: 12px;
+}
+
 .countdown-section {
   align-items: center;
   display: flex;
@@ -20,7 +24,30 @@
 }
 
 .countdown-timer {
-  font-size: 62px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  font-size: 42px;
   position: absolute;
-  top: 35%;
+  top: 50%;
+}
+
+.countdown-timer div {
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-minutes {
+  position: relative;
+}
+
+.countdown-seconds {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }

@@ -1,0 +1,7 @@
+.countdown-svg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  stroke-dasharray: 300;
+  transition: all .8s ease-in-out;
+}
