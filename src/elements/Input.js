@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Input({ className, type, name, value, onChange, label, size, min, max }) {
+function Input({ className, type, name, value, onChange, label, size, min, max, disabled }) {
   return (
     <fieldset>
       <legend>{ label }</legend>
@@ -13,6 +13,7 @@ function Input({ className, type, name, value, onChange, label, size, min, max }
         size={ size }
         min={ min }
         max={ max }
+        disabled={ disabled }
       />
     </fieldset>
   )
