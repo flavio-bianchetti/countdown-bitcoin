@@ -1,8 +1,18 @@
+* {
+  color: #222;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 span {
   font-size: 12px;
 }
 
-.countdown-section {
+fieldset {
+  color: #b94502;
+  border-color: #b94502;
+}
+
+.countdown-section, .countdown-clock {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -21,6 +31,36 @@ span {
   flex-flow: row nowrap;
   position: absolute;
   top: 40%;
+}
+
+.timer-button {
+  background-color: #ff9100;
+  border: none;
+  padding: 10px;
+  margin: auto 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #b94502;
+  color: #fefae0;
+  font-weight: 700;
+  transition: 0.6s;
+}
+
+.timer-button:hover {
+  background-color: #ff6d00;
+  color: #fefae0;
+  box-shadow: 2px 2px 3px #572000;
+}
+
+.disabled-timer-button {
+  border: none;
+  padding: 10px;
+  margin: auto 10px;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #666;
+  box-shadow: 2px 2px 3px #666;
+  font-weight: 700;
+  transition: 0.6s;
 }
 
 .countdown-timer {
