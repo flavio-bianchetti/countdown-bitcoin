@@ -51,6 +51,10 @@ function Countdown() {
     if (startCountdown && timeSeconds > 0) {
       timer = setInterval(() => {
         setTimeSeconds((timeSeconds) => timeSeconds - 1);
+        if (timeSeconds === 1) {
+          setStartCountdown(false);
+          setClockIsVisible(false);
+        }
       }, 1000);
     } else 
       if (!startCountdown && timeSeconds !== 0) {
