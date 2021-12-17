@@ -17,7 +17,6 @@
   width: 100vw;
 }
 
-
 @media screen and (min-width: 320px) {
   .counter-background {
     animation: background-color-animate 20s infinite;

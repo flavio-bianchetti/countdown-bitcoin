@@ -23,15 +23,6 @@ function Countdown() {
   const [clockIsVisible, setClockIsVisible] = useState(false);
   const [startCountdown, setStartCountdown] = useState(false);
 
-  function setCountdownUserTimer(event) {
-    const { name, value } = event.target;
-    const newValue = Number(value) > 99999 ? 99999 : Number(value);
-    setInitialCountdown({
-      ...countdown,
-      [name]: newValue,
-    });
-  }
-
   useEffect(() => {
     const sec = timeSeconds;
     const seconds = sec % 60;
@@ -62,6 +53,15 @@ function Countdown() {
       }
     return () => clearInterval(timer);    
   }, [startCountdown, setTimeSeconds, timeSeconds]);
+
+  function setCountdownUserTimer(event) {
+    const { name, value } = event.target;
+    const newValue = Number(value) > 99999 ? 99999 : Number(value);
+    setInitialCountdown({
+      ...initialCountdown,
+      [name]: newValue,
+    });
+  }
 
   function setTimerCountdown() {
     const sec = initialCountdown.seconds
