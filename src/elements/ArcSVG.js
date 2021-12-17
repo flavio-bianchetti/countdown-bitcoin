@@ -37,18 +37,18 @@ function ArcSVG({ radius }) {
     <svg className="countdown-svg">
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#00bc9b" />
-          <stop offset="33%" stop-color="#5eaefd" />
-          <stop offset="66%" stop-color="#c77dff" />
-          <stop offset="100%" stop-color="#ff7900" />
+          <stop offset="0%" stopColor="#00bc9b" />
+          <stop offset="33%" stopColor="#5eaefd" />
+          <stop offset="66%" stopColor="#c77dff" />
+          <stop offset="100%" stopColor="#ff7900" />
         </linearGradient>
       </defs>
       <path
         fill="none"
         stroke="url(#gradient)"
-        stroke-with="4"
-        stroke-linecap="round"
-        stroke-width="4"
+        strokewith="4"
+        strokeLinecap="round"
+        strokeWidth="4"
         d={ describeArc(50, 50, 48, 0, 360 - radius)}
       />
     </svg>

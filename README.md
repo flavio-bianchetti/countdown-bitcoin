@@ -38,16 +38,8 @@
       target="_blank"
     />
   </a>
-  <a href="https://redux.js.org/" target="_blank">
-    <img
-      align="center"
-      height="30"
-      src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
-      target="_blank"
-    />
-  </a>
 </section>
-
+<br />
 
 > Below is a screenshot of the countdown app developed so far.
 
@@ -99,15 +91,7 @@
       target="_blank"
     />
   </a>
-  <a href="https://redux.js.org/" target="_blank">
-    <img
-      align="center"
-      height="30"
-      src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
-      target="_blank"
-    />
-  </a>
 </section>
-
+<br />
 
 > Você pode testar o aplicativo neste _[link](http://countdown-bitcoin.surge.sh/)_.
