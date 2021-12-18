@@ -1,5 +1,6 @@
 import React from 'react';
 import Countdown from '../component/Countdown';
+import Statistics from '../component/Statistics';
 import '../css/BackgroundBitcoin.css';
 
 function CountdownBitcoin() {
@@ -7,7 +8,8 @@ function CountdownBitcoin() {
   return(
     <section className="bitcoin-background">
       <div className="counter-background"></div>
-        <Countdown />
+      <Countdown />
+      <Statistics />
     </section>
   );
 }
