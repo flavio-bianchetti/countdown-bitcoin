@@ -7,7 +7,13 @@ import CountdownContext from '../context/CountdownContext';
 import DataInput from '../data/DataInput';
 
 function Countdown() {
-  const { timeSeconds, setTimeSeconds } = useContext(CountdownContext);
+  const {
+    timeSeconds,
+    setTimeSeconds,
+    getPreviusValuesOfBitcoin,
+    getCurrentValuesOfBitcoin,
+    setInitalValuesBTC,
+  } = useContext(CountdownContext);
   const [initialCountdown, setInitialCountdown] = useState({
     days: 0,
     hours: 0,
@@ -45,6 +51,7 @@ function Countdown() {
         if (timeSeconds === 1) {
           setStartCountdown(false);
           setClockIsVisible(false);
+          getCurrentValuesOfBitcoin();
         }
       }, 1000);
     } else 
@@ -52,7 +59,7 @@ function Countdown() {
         clearInterval(timer);
       }
     return () => clearInterval(timer);    
-  }, [startCountdown, setTimeSeconds, timeSeconds]);
+  }, [startCountdown, setTimeSeconds, timeSeconds, getCurrentValuesOfBitcoin]);
 
   function setCountdownUserTimer(event) {
     const { name, value } = event.target;
@@ -69,6 +76,7 @@ function Countdown() {
     + initialCountdown.hours * 3600
     + initialCountdown.days * 86400;
     setTimeSeconds(sec);
+    setInitalValuesBTC();
     setClockIsVisible(true);
   }
 
@@ -80,6 +88,7 @@ function Countdown() {
 
   function startCount() {
     setStartCountdown(true);
+    getPreviusValuesOfBitcoin();
   }
 
   function stopCount() {
@@ -87,6 +96,7 @@ function Countdown() {
   }
 
   function resetCount() {
+    setInitalValuesBTC();
     setClockIsVisible(false);
     setStartCountdown(false);
     setInitialCountdown({

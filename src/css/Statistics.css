@@ -1,0 +1,68 @@
+@media screen and (min-width: 1px) and (max-width: 319px) {
+  h1 {
+    display: none;
+  }
+
+  table {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  * {
+    color: #222;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  table, th, td {
+    border: 2px solid #b94502;
+    border-collapse: collapse;
+    border-style: outset;
+    text-align: center;
+    font-size: 12px;
+    transition: 0.6s;
+  }
+
+  .statistics-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .statistics-section > div {
+    display: flex;
+    position: absolute;
+    flex-flow: column nowrap;
+    justify-content: center;
+    top: 38%;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+    transition: 0.6s;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  table, th, td {
+    font-size: 16px;
+    transition: 0.6s;
+  }
+}
