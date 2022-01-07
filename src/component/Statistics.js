@@ -10,12 +10,16 @@ function Statistics() {
     
   const { previus, current } = valuesBTC;
   return (
-    <section className="statistics-section">
+    <div>
       {
         previus.usd > 0 && current.usd > 0
         && (
-          <div>
-            <h1>Statistics</h1>
+          <section className="statistics-section">
+            <h1
+              className="h1-statistics"
+            >
+              Statistics
+            </h1>
             <table>
               <tr>
                 <th>Currency</th>
@@ -39,10 +43,10 @@ function Statistics() {
                 ))
               }
             </table>
-          </div>
+          </section>
         )
       }
-    </section>
+    </div>
   )
 }
 
