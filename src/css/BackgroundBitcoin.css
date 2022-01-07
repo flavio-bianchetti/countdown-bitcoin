@@ -12,7 +12,7 @@
 
 .counter-background {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   height: 100vh;
   margin: auto;
   mix-blend-mode: hue;
@@ -46,5 +46,15 @@
     90% {background-color: rgba(255, 129, 0, 0.25)}
     95% {background-color: rgba(255, 172, 0, 0.25)}
     100% {background-color: rgba(255, 215, 0, 0.25)}
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .bitcoin-background {
+    height: 120vh;
+  }
+
+  .counter-background {
+    height: 120vh;
   }
 }
