@@ -3,7 +3,7 @@
 > In this repository, a time counter is being developed which, at the end of the time chosen by the user, shows the difference between the initial and final value of the Bitcoin currency. The objective of this project is to establish the knowledge acquired in React and others necessary for its realization. Author: _[Flávio Bianchetti](https://www.linkedin.com/in/flaviobianchetti/)_ :rocket: (2021).
 
 
-> Were used in this app:
+> Were used in this application:
 
 <section style="display: inline-block;">
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
@@ -40,6 +40,13 @@
   </a>
 </section>
 <br />
+
+> In this application, the _[CoinGeko API](https://www.coingecko.com/pt/api)_ was used to provide the values ​​of the Bitcoin cryptocurrency. The API updates currency values ​​every two minutes. Likewise, the counter displays the table with the difference in currency values ​​for times of two minutes or more.
+
+> Next steps of the author in the improvement of this application (no date set):
+- Improve CSS with SASS and/or Tailwind CSS;
+- Fix errors that occurred when viewed on mobile devices;
+- Add other types of cryptocurrencies or similar;
 
 > Below is a screenshot of the countdown app developed so far.
 
@@ -56,7 +63,7 @@
 > Acima, na versão em inglês, é exibida uma captura de tela do aplicativo de contagem regressiva, desenvolvido até agora.
 
 
-> Foram usados ​​neste aplicativo:
+> Foram utilizados ​​neste aplicativo:
 
 <section style="display: inline-block;">
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
@@ -93,5 +100,12 @@
   </a>
 </section>
 <br />
+
+> Neste aplicativo foi utilizada a _[API CoinGeko](https://www.coingecko.com/pt/api)_ para prover os valores da criptomoeda Bitcoin. A API atualiza os valores da moeda a cada dois minutos. Da mesma forma o contador exibe a tabela com a diferença de valores da moeda para tempos de dois minutos ou mais.
+
+> Próximos passos do autor no aperfeiçoamento desta aplicação (sem data definida):
+- Aperfeiçoar o CSS com o SASS e/ou Tailwind CSS;
+- Consertar os erros ocorridos quando visualizado em dispositivos móveis;
+- Acrescentar outros tipos de criptomoedas ou similares;
 
 > Você pode testar o aplicativo neste _[link](http://countdown-bitcoin.surge.sh/)_.
